@@ -45,7 +45,7 @@ public class TdCoche extends DtCoche{
     */
     
     public TdCoche(String NCarro,int capMaxAcelerar,int gas) throws Exception{
-        if(gas<0||gas<20){
+        if(gas<0||gas>20){
             throw new Exception();
         }
         this.NCarro=NCarro;
